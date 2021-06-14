@@ -1,0 +1,44 @@
+{
+  "name": "DB Radio Player",
+  "description": "DB Radio Player",
+  "version": "0.5.4",
+  "permissions": [
+    "debugger",
+	"contextMenus",
+	"tabCapture",
+	"tabs",
+	"activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "debuggerContinue.png",
+    "default_title": "DB Radio Player"
+  },
+  "commands": {
+	  "proximaRadio": {
+		"suggested_key": {
+		  "default": "Ctrl+Shift+8"
+		},
+		"description": "Proxima Radio",
+		"global": true
+	  },
+	  "volumeMenos": {
+		"suggested_key": {
+		  "default": "Ctrl+Shift+0"
+		},
+		"description": "Volume -",
+		"global": true
+	  },
+	  "volumeMais": {
+		"suggested_key": {
+		  "default": "Ctrl+Shift+9"
+		},
+		"description": "Volume +",
+		"global": true
+	  }
+	  
+	},
+  "manifest_version": 2
+}
